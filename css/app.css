@@ -1,0 +1,159 @@
+﻿/* app.css */
+.load-container { position: absolute; top: 50%; width: 100%; margin-top: -1.4rem; -moz-box-sizing: border-box; box-sizing: border-box; text-align: center; overflow: hidden; }
+.load-container img { display: inline-block; width: 2rem; height: 2rem; }
+.load-container p { height: 0.8rem; line-height: 0.8rem; }
+.wrapper { display: none; }
+
+/*topic begin*/
+.topic { margin-bottom: 0.22rem; }
+.topic .topic-infowrap { position: relative; min-height: 3rem; background: #e8e8e8 url(../img/ui_placeholder.png) no-repeat center center; background-size: 1.5rem auto; overflow: hidden; }
+
+@media screen and (max-width:420px) {
+    .topic .topic-infowrap { max-height: 3.25rem; }
+    .topic .topic-infowrap img { width: 100%; max-height: 3.25rem; }
+}
+
+/*@media screen and (min-width:321px) and (max-width:361px) {
+    .topic .topic-infowrap { max-height: 4.2rem; }
+}
+
+@media screen and (min-width:361px) and (max-width:376px) {
+    .topic .topic-infowrap { max-height: 4.2rem; }
+}*/
+
+/*@media screen and (min-width:376px) {
+    html { font-size: 51.75px; }
+}*/
+
+.topic-infowrap .topic-imgbg { position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; background: url(../img/topic_imgbg.png) repeat-x left bottom; background-size: 100% 100%; }
+.topic-infowrap .topicinfo { position: absolute; left: 0.375rem; bottom: 0.35rem; color: #fff; }
+.topicinfo h1 { margin-bottom: 0.28rem; font-size: 0.425rem; }
+.topicinfo .topic-msg { font-size: 0.275rem; }
+.topicinfo .topic-msg > span { width: 2.625rem; float: left; }
+.topic-msg > span em { margin-left: 0.1rem; font-style: normal; }
+.topic-infowrap .topic-btn { position: absolute; top: 0.375rem; right: 0.375rem; width: 1.1rem; height: 1.1rem; font-size: 0.3rem; text-align: center; line-height: 1.1rem; border-radius: 100%; }
+.topic-infowrap .topic-attention { background-color: #e15872; color: #fff; }
+
+/*置顶*/
+.topic .topic-toparticle { padding: 0.125rem 0.25rem; }
+.topic-toparticle li { height: 0.425rem; padding: 0.22rem 0; line-height: 0.425rem; overflow: hidden; }
+.topic-toparticle li .topic-toparticle-tag { width: 0.775rem; height: 0.425rem; font-size: 0.275rem; text-align: center; color: #fff; background-color: #6fa3f7; border-radius: 0.05rem; }
+.topic-toparticle li p { width: 6rem; height: 0.425rem; margin-left: 0.1rem; font-size: 0.325rem; }
+.topic-toparticle li .tag-announcemen { background-color: #ff456a; }
+.topic-toparticle li .tag-notice { background-color: #f9b447; }
+
+@media screen and (min-width:376px) and (max-width:415px) {
+    .topic-toparticle li p { line-height: 0.5rem; }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .topic-toparticle li.ui-border-b:last-child { background-position: left bottom; background-image: none; }
+}
+
+.articlewrap .article-item { position: relative; padding: 0.375rem 0.25rem 0.25rem 0.25rem; }
+
+/*authorInfo*/
+.user-infowrap { margin-bottom: 0.2rem; }
+.user-infowrap .user-avatar { position: relative; z-index: 9; width: 1rem; height: 1rem; margin-right: 0.22rem; }
+.user-avatar img { display: block; width: 1rem; height: 1rem; }
+.user-infowrap .userinfo { height: 1rem; overflow: hidden; }
+.userinfo .username { margin-top: 0.1rem; margin-bottom: 0.15rem; font-size: 0.375rem; }
+.userinfo time { font-size: 0.3rem; color: #a8a8a8; }
+
+/*topicInfo*/
+.article-content { }
+.article-content .article-msg { margin-bottom: 0.2rem; }
+.article-msg h2 { font-size: 0.4rem; color: #454545; line-height: 1.6; }
+.article-msg p { font-size: 0.375rem; line-height: 1.5; word-break: break-all; }
+
+/*topicImg*/
+.article-imgview { margin-left: -0.125rem; margin-bottom: 0.2rem; }
+.multiimg { max-width: 7rem; }
+.multiimg .lazyimgbox { width: 2.2rem; height: 2.2rem; margin-left: 0.125rem; margin-bottom: 0.125rem; overflow: hidden; }
+.multiimg .horimg img { width: auto; height: 100%; }
+.multiimg .verimg img { width: 100%; height: auto; }
+.singleimg { margin-left: 0; margin-bottom: 0.325rem; max-width: 7rem; overflow: hidden; }
+/*.singleimg .lazyimgbox { min-width: 3rem; min-height: 3rem; }*/
+.lazyimgbox img { max-width: none; }
+
+/*prasiseInfo*/
+.user-control { height: 0.475rem; font-size: 0.3rem; line-height: 0.5rem; color: #acacac; }
+.user-control .article-praise { width: 1.5rem; height: 0.475rem; padding-left: 0.6rem; background: url(../img/topic_praise_icon@3x.png) no-repeat left center; background-size: 0.6rem auto; }
+.user-control .article-comment { width: 1.5rem; height: 0.475rem; padding-left: 0.55rem; background: url(../img/topic_replay_icon@3x.png) no-repeat left center; background-size: 0.55rem auto; }
+.user-control .article-praise-after { width: 1.5rem; height: 0.475rem; padding-left: 0.6rem; background: url(../img/topic_praise_after_icon@3x.png) no-repeat left center; background-size: 0.6rem auto; }
+
+/*prasiseUserInfo*/
+.article-praiseuser { position: relative; margin-top: 0.25rem; margin-bottom: 0.125rem; padding-top: 0.25rem; }
+.article-praiseuser li.user-avatar { width: 0.75rem; height: 0.75rem; margin-right: 0.22rem; float: left; }
+.article-praiseuser li.user-avatar img { width: 0.75rem; height: 0.75rem; }
+.article-praiseuser li.user-avatar-more { position: absolute; right: 0.06rem; width: 0.75rem; height: 0.75rem; background: url(../img/topic_praise_more_icon@3x.png) no-repeat center center; background-size: 100% auto; }
+/*topic end*/
+
+/*detail begin*/
+/*topic链接*/
+.detailheader { display: block; height: 0.625rem; margin-bottom: 0.25rem; padding: 0.2rem 0.375rem; line-height: 0.625rem; background: #ff456a; }
+.detailheader .detail-topicname { height: 0.625rem; padding: 0 0.22rem; border-radius: 0.625rem; font-size: 0.35rem; text-align: center; color: #ff456a; background: #fff; }
+.detail-topicname i, .detail-topicname span { display: block; float: left; }
+.detail-topicname span { max-width: 2.23rem; }
+.detailheader .detail-topicmore { font-size: 0.325rem; color: #fff; }
+
+/*detailImg*/
+.detail-img { margin-left: 0; }
+.detail-img span.lazyimgbox { min-width: 3rem; min-height: 3rem; width: 100%; height: auto; margin-bottom: 0.125rem; }
+.detail-img img { width: 100%; height: auto; }
+
+@media screen and (min-width:721px) {
+    .detail-img span.lazyimgbox { max-width: 6.85rem; width: 100%; height: auto; margin-bottom: 0.125rem; }
+    .comment-content span.lazyimgbox { max-width: 5.9rem; width: 100%; height: auto; margin-bottom: 0.125rem; }
+}
+
+/*commentInfo*/
+.detail-comment { padding: 0 0.33rem; }
+.comment .ui-border-t:first-child { border-top: none; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .comment .ui-border-t:first-child { background-position: left bottom; background-image: none; }
+}
+
+.comment .comment-item { padding: 0.25rem 0; }
+
+.comment-userinfo .user-avatar { width: 0.7rem; height: 0.7rem; margin-right: 0.225rem; }
+.comment-userinfo .user-avatar img { width: 0.7rem; height: 0.7rem; }
+.comment-user .user-name { display: block; height: 0.325rem; margin-bottom: 0.1rem; font-size: 0.325rem; color: #ff456a; }
+.comment-user time { display: block; font-size: 0.25rem; color: #acacac; }
+.comment-userinfo .comment-more { width: 1.1rem; height: 0.625rem; background: url(../img/detail_commore_icon@3x.png) no-repeat center center; background-size: auto 0.625rem; }
+
+.comment-content { margin-top: 0.15rem; margin-left: 0.925rem; font-size: 0.3rem; line-height: 1.5; }
+.comment-content p { margin-bottom: 0.15rem; word-break: break-all; }
+.comment-content span.lazyimgbox { min-width: 5.9rem; min-height: 2rem; width: 100%; height: auto; margin-bottom: 0.125rem; }
+
+/*reply*/
+.comment-reply { margin-left: 0.925rem; margin-top: 0.125rem; padding-top: 0.25rem; }
+.reply-floor .floor-item { position: relative; margin-bottom: 0.125rem; text-align: left; line-height: 0.425rem; word-break: break-all; word-wrap: break-word; }
+.floor-item .reply-floor-user { margin-right: 0.1rem; font-size: 0.325rem; color: #ff456a; float: left; }
+.floor-item .reply-floorhost { display: inline-block; width: 0.55rem; height: 0.325rem; margin-top: 0.05rem; margin-right: 0.05rem; font-size: 0.2rem; line-height: 0.325rem; text-align: center; background-color: #ff456a; color: #fff; border-radius: 0.05rem; float: left; }
+.floor-item .floor-replyicon { display: inline-block; margin-right: 0.1rem; font-size: 0.3rem; float: left; }
+.floor-item .floor-content { font-size: 0.3rem; margin-right: 0.33rem; word-break: break-all; color: #737373; }
+.floor-item .list-item-time { display: inline-block; font-size: 0.25rem; color: #acacac; }
+.reply-more { margin-top: 0.125rem; margin-bottom: 0.1rem; font-size: 0.25rem; color: #a8a8a8; float: right; }
+
+#detail-comment-empty-tip { text-align: center; line-height: 1.5; font-size: 0.35rem; }
+
+/*downloadTips*/
+.viewmoretips { }
+.popup_wrap { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 10; background-color: rgba(0, 0, 0, 0.5); display: none; }
+.popup_body { position: absolute; z-index: 20; left: 50%; top: 50%; width: 6rem; height: 4.2rem; margin-left: -3rem; margin-top: -2.1rem; background: #fff; border-radius: 0.1rem; }
+.popup_body p { margin-top: 0.6rem; margin-bottom: 0.5rem; font-size: 0.4rem; text-align: center; line-height: 1.5; }
+.popup_body a { display: block; width: 3.5rem; margin: 0 auto; padding: 0.2rem 0; font-size: 0.4rem; text-align: center; border-radius: 0.1rem; }
+.popup_body .popup_download { margin-bottom: 0.35rem; background: #ff456a; color: #fff; border: 1px solid #ff456a; box-shadow: 1px 1px 1px #d3d3d3; }
+.popup_body .popup_close { background: #f1f1f1; color: #717070; border: 1px solid #c2c2c2; }
+
+/*hottopicInfo*/
+.hottopic { padding-bottom: 1.7rem; }
+.hottopic .hottopic-downtips { width: 100%; height: 0.65rem; padding-top: 0.625rem; text-align: center; font-size: 0.325rem; color: #fff; background: url(../img/hottopic_downtips.png) no-repeat center top; background-size: 100% 100%; }
+.hottopic-item { display: block; margin: 0 0.375rem; padding: 0.375rem 0; background: #fff; border-bottom: 1px solid #d6d6d6; }
+.hottopic-item:last-child { border-bottom: none; }
+.hottopic-item p { width: 5.8rem; height: 1.375rem; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 3; font-size: 0.325rem; line-height: 1.4; float: left; }
+.hottopic-item .lazyimgbox { width: 1.375rem; height: 1.375rem; }
+.downbtn { display: none; position: fixed; z-index:9; bottom: 0; width: 100%; background: #fff; border-top: 1px solid #d6d6d6; }
+/*detail end*/
