@@ -7,7 +7,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1.04rem;
+    height: 1.38rem;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -16,12 +16,12 @@
 .bottom-menu a.bottom-menu-item {
     display: block;
     width: 33.3%;
-    padding-top: 0.7rem;
-    font-size: 0.22rem;
+    padding-top: 0.93rem;
+    font-size: 0.29rem;
     text-align: center;
     background-repeat: no-repeat;
-    background-position: center 0.11rem;
-    background-size: 0.5rem auto;
+    background-position: center 0.13rem;
+    background-size: 0.67rem auto;
     color: #fff;
 }
 .bottom-menu-home {
@@ -47,11 +47,27 @@
     background-image: url("../images/icon/bottom_suggest_active.png");
 }
 /*bottomMenu end*/
+/*header being*/
+.header{
+    background-color: #000;
+}
+.header .header-top{
+    display: flex;
+    width: 94%;
+    margin: 0 auto;
+    padding: 0.27rem 0;
+}
+.header-top .header-logo{
+    display: block;
+    width: 1.85rem;
+    margin-right: 0.27rem;
+}
+/*header end*/
 /*index begin*/
 .index-add {
     position: relative;
     width: 100%;
-    height: 1.27rem;
+    height: 1.69rem;
     background: url("../images/index_add_bg.png") no-repeat;
     background-size: 100%;
 }
@@ -60,29 +76,40 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 0.45rem;
-    height: 0.43rem;
+    width: 0.6rem;
+    height: 0.57rem;
     background: url("../images/index_add_close.png") no-repeat;
     background-size: 100% auto;
 }
 .index-add .index-add-main {
     width: 94%;
-    height: 1.27rem;
     margin: 0 auto;
 }
 .index-add-main .index-add-info {
-    height: 1.07rem;
-    padding-left: 0.58rem;
-    padding-top: 0.2rem;
+    padding-left: 0.77rem;
+    padding-top: 0.27rem;
     color: #f00;
     font-weight: bold;
     line-height: 1.4;
     background: url("../images/icon/index_add_icon.png") no-repeat left center;
-    background-size: 0.41rem auto;
+    background-size: 0.55rem auto;
 }
 .index-add-info h2 {
-    font-size: 0.36rem;
+    font-size: 0.48rem;
 }
 .index-add-info p {
-    font-size: 0.24rem;
+    font-size: 0.32rem;
+}
+.index-add-main .index-add-down{
+    display: block;
+    width: 1.36rem;
+    height: 0.73rem;
+    margin-top: 0.4rem;
+    margin-right: 0.8rem;
+    text-align: center;
+    line-height: 0.73rem;
+    font-size: 0.32rem;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 0.06rem;
 }
