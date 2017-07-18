@@ -10,35 +10,120 @@
     <link rel="shortcut icon" href="../images/favicon.ico">
     <!--引入CSS-->
     <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/swiper.min.css" rel="stylesheet">
     <link href="../css/app.css" rel="stylesheet"/>
-    <link href="../css/default-skin/default-skin.css" rel="stylesheet"/>
+    <!--<link href="../css/default-skin/default-skin.css" rel="stylesheet"/>-->
     <!--引入JS-->
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
     <script src="../js/lib/flexible_css.js"></script>
     <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/swiper.jquery.min.js"></script>
     <title>刀光合影看武侠，大宝剑</title>
 </head>
 <body>
-    <section class="index-add">
-        <a href="javascript:;" class="index-add-close"></a>
-        <div class="index-add-main clearfix">
-            <div class="index-add-info fl">
+    <!--indexHeaderAd begin-->
+    <section class="index-headerad">
+        <a href="javascript:;" class="index-headerad-close"></a>
+        <div class="index-headerad-main clearfix">
+            <div class="index-headerad-info fl">
                 <h2>欢迎安装一逗比APP</h2>
-                <p>欢迎安装一逗比APP</p>
+                <p>海量视频任你选</p>
             </div>
-            <a href="" class="index-add-down fr">安装</a>
+            <a href="" class="index-headerad-down fr">安装</a>
         </div>
     </section>
+    <!--indexHeaderAd begin-->
+    <!--header begin-->
     <header class="header clearfix">
-        <div class="header-top">
+        <div class="header-main">
             <span class="header-logo">
                 <img src="../images/logo.png">
             </span>
+            <div class="header-search">
+                <input type="text" placeholder="请输入搜索关键字">
+            </div>
+            <!--登录按钮 begin-->
+            <a href="" class="index-loginbtn">登录</a>
+            <!--登录按钮 end-->
+            <!--登录后 begin-->
+            <div class="header-userinfo" style="display: none">
+                <span class="header-userphoto">
+                    <img src="../images/temp/img1.png">
+                </span> <span class="header-username">用户名</span>
+            </div>
+            <!--登录后 end-->
         </div>
     </header>
+    <!--header begin-->
+    <nav class="nav"></nav>
+    <!--container begin-->
+    <section id="container">
+        <div class="vod-container">
+            <div class="index-banner">
+                <img src="../images/placeholder.png" class="index-banner-bg">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                            <img data-src="../images/temp/img2.png" class="swiper-lazy">
+                            <!-- Preloader image -->
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <span class="index-banner-tips">更新至20集</span>
+                            <div class="index-banner-title">6月热播 动物总动员</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="../images/temp/img2.png" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <span class="index-banner-tips">更新至3集</span>
+                            <div class="index-banner-title">12月热播 变形金刚</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="../images/temp/img2.png" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <span class="index-banner-tips">更新至1集</span>
+                            <div class="index-banner-title">6月热播 楚乔传</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="../images/temp/img2.png" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <span class="index-banner-tips">更新至50集</span>
+                            <div class="index-banner-title">3月热播 欢乐颂</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img data-src="../images/temp/img2.png" class="swiper-lazy">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <span class="index-banner-tips">更新至20集</span>
+                            <div class="index-banner-title">6月热播 复仇者联盟</div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--container end-->
+    <!--bottomMenu begin-->
     <section class="bottom-menu">
         <a href="vod_index.html" class="bottom-menu-item bottom-menu-home bottom-menu-current">首页</a>
         <a href="" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
         <a href="" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
     </section>
+    <!--bottomMenu end-->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay : 5000,//可选选项，自动滑动
+            autoplayDisableOnInteraction : false,
+            pagination : '.swiper-pagination',
+            paginationClickable : true,
+            // Disable preloading of all images
+            preloadImages : false,
+            // Enable lazy loading
+            lazyLoading : true,
+            loop : true
+        });
+    </script>
 </body>
 </html>

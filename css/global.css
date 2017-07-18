@@ -1,9 +1,23 @@
 ﻿@charset "UTF-8";
 /*CSS Reset*/
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button { margin: 0; padding: 0; }
-body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; outline: 0; }
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
-table { border-collapse: collapse; border-spacing: 0; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 caption, th { text-align: left; }
 fieldset, img { border: 0; }
 li { list-style: none; }
@@ -12,19 +26,26 @@ del { text-decoration: line-through; }
 input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; outline: 0; }
 button { -webkit-appearance: none; border: 0; background: none; }
 a { -webkit-touch-callout: none; text-decoration: none; }
-:focus { outline: 0; -webkit-tap-highlight-color: transparent; }
+a:focus { outline: 0; -webkit-tap-highlight-color: transparent; }
 em, i { font-style: normal; }
 /* global */
 html { font-family: STXihei, "Microsoft YaHei", Arial, "Helvetica Neue", Helvetica, sans-serif; }
-body { background-color: #232333; box-sizing: border-box; font-family: STXihei; line-height: 1; color: #7e83a6; }
+body { box-sizing: border-box; font-family: STXihei; line-height: 1; color: #7e83a6; }
 img { display: block; max-width: 100%; width: 100%; height: auto; -ms-interpolation-mode: bicubic; border: none; font-size: 0; margin: 0; padding: 0; }
 ul li { list-style-type: none; border: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 input, textarea { border: none; }
 input, button, select, textarea, a { outline: none; background-color: transparent; }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
 a { blr: expression(this.onFocus=this.close()); blr: expression(this.onFocus=this.blur()); }
 a:focus { -moz-outline-style: none; outline: none; }
-a, a:after { color: #7e83a6; }
+a, a:after { color: #7e83a6;}
 .fl { float: left; }
 .fr { float: right; }
 .clearfix:before, .clearfix:after { height: 0; content: ""; display: block; clear: both; visibility: hidden; font-size: 0; }
