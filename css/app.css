@@ -108,12 +108,30 @@
     position: relative;
     width: 10rem;
     margin: 0 auto;
+    padding-bottom: 1.38rem;
     background-color: #232333;
 }
 .vod-container {
     width: 95%;
     margin: 0 auto;
     padding-top: 0.53rem;
+}
+.gotop {
+    display: block;
+    position: fixed;
+    right: 0.67rem;
+    bottom: 4.8rem;
+    width: 0.87rem;
+    height: 0.44rem;
+    padding-top: 0.43rem;
+    font-size: 0.29rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.11rem;
+    background: #f00 url("../images/icon/gotop.png") no-repeat center 0.11rem;
+    background-size: 0.36rem auto;
+    z-index: 90;
+    cursor: pointer;
 }
 /*index begin*/
 .index-headerad {
@@ -244,5 +262,141 @@
     background: url("../images/icon/dot_current.png") no-repeat;
     background-size: 100% auto;
 }
-.index-list{}
-.index-list .index-list-title{}
+.index-list {
+    margin-bottom: 0.44rem;
+}
+.index-list .index-list-title {
+    display: flex;
+    justify-content: space-between;
+    height: 0.48rem;
+    margin-bottom: 0.21rem;
+}
+.index-list-title h2 {
+    height: 0.48rem;
+    padding-left: 0.58rem;
+    font-size: 0.4rem;
+    font-family: "HYk1gj";
+    line-height: 0.48rem;
+}
+.index-list-title h2 span {
+    background: -webkit-linear-gradient(left, #e51515, #f56f0f);
+    -webkit-background-clip: text; /*只有webkit内核支持text的剪切模式*/
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.index-list-title a {
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+    color: #4d516f;
+}
+.index-list .index-listbox {
+}
+.index-listbox ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.3rem;
+}
+.index-list-item {
+    margin-bottom: 0.32rem;
+    margin-left: 0.3rem;
+}
+.index-list-item a {
+    display: block;
+}
+.index-list-imgbox {
+    width: 4.6rem;
+    height: 2.72rem;
+    margin-bottom: 0.16rem;
+}
+.index-list-imgbox img {
+    width: 4.6rem;
+    height: 2.72rem;
+}
+.index-list-name {
+    margin-bottom: 0.13rem;
+    font-size: 0.32rem;
+    color: #fff;
+}
+.index-list-info span {
+    padding-left: 0.37rem;
+    padding-right: 0.4rem;
+    font-size: 0.27rem;
+}
+.index-list-playnum {
+    background: url("../images/icon/play.png") no-repeat left center;
+    background-size: 0.28rem auto;
+}
+.index-list-commentnum {
+    background: url("../images/icon/comment.png") no-repeat left center;
+    background-size: 0.28rem auto;
+}
+.index-listbox .index-list-refresh {
+    display: block;
+    width: 1.84rem;
+    height: 0.48rem;
+    margin: 0 auto;
+    font-size: 0.29rem;
+    line-height: 0.48rem;
+    text-indent: 0.32rem;
+    border: 1px solid #4d516f;
+    border-radius: 0.48rem;
+    background: url("../images/icon/refresh.png") no-repeat 1.28rem center;
+    background-size: 0.28rem auto;
+    cursor: pointer;
+}
+.index-recommend .index-list-title h2 {
+    background: url("../images/icon/index_title_recommend.png") no-repeat left center;
+    background-size: auto 0.48rem;
+}
+.index-favorite .index-list-title h2 {
+    background: url("../images/icon/index_title_favorite.png") no-repeat left center;
+    background-size: auto 0.48rem;
+}
+.index-mostplay .index-list-title h2 {
+    background: url("../images/icon/index_title_mostplay.png") no-repeat left center;
+    background-size: auto 0.48rem;
+}
+.index-renewest .index-list-title h2 {
+    background: url("../images/icon/index_title_newest.png") no-repeat left center;
+    background-size: auto 0.48rem;
+}
+.index-ad {
+    display: block;
+    width: 100%;
+    min-height: 2.05rem;
+    margin-bottom: 0.24rem;
+}
+.index-ad2 {
+    display: block;
+    width: 100%;
+    min-height: 2.92rem;
+    margin-bottom: 0.24rem;
+}
+/*index end*/
+/*pagination begin*/
+.pagination {
+    display: flex;
+    width: 6.32rem;
+    margin: 0 auto;
+    padding-bottom: 0.28rem;
+}
+.pagination span {
+    display: block;
+    width: 0.52rem;
+    height: 0.52rem;
+    margin: 0 0.06rem;
+    font-size: 0.29rem;
+    text-align: center;
+    line-height: 0.52rem;
+    border: 1px solid #7e83a6;
+    cursor: pointer;
+}
+.pagination span.pagination-prev, .pagination span.pagination-next {
+    width: 1.12rem;
+}
+.pagination span.pagination-active {
+    color: #fff;
+    border: 1px solid #f00;
+    background-color: #f00;
+}
+/*pagination end*/

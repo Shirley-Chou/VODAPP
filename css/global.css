@@ -5,7 +5,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     padding: 0;
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    font-family: STHeiTi, "Helvetica Neue", Helvetica, sans-serif;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     outline: 0;
@@ -39,9 +39,9 @@ input, button, select, textarea, a { outline: none; background-color: transparen
 a {
     text-decoration: none;
     cursor: pointer;
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
+    /*transition: all .3s linear;*/
+    /*-webkit-transition: all .3s linear;*/
+    /*-moz-transition: all .3s linear;*/
 }
 a { blr: expression(this.onFocus=this.close()); blr: expression(this.onFocus=this.blur()); }
 a:focus { -moz-outline-style: none; outline: none; }
@@ -77,5 +77,3 @@ a, a:after { color: #7e83a6;}
 .ui-nowrap { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .ui-nowrap-flex { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 1; -webkit-box-flex: 1; height: inherit; }
 .ui-nowrap-multi { display: -webkit-box; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
-/*lazyload*/
-.article-imgview .ui-imglazyload, span.lazyimgbox { display: block; background: #e8e8e8 url(../img/ui_placeholder.png) no-repeat center center; background-size: 1.5rem auto; }
