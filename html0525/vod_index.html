@@ -12,7 +12,6 @@
     <link href="../css/global.css" rel="stylesheet"/>
     <link href="../css/swiper.min.css" rel="stylesheet">
     <link href="../css/app.css" rel="stylesheet"/>
-    <!--<link href="../css/default-skin/default-skin.css" rel="stylesheet"/>-->
     <title>刀光合影看武侠，大宝剑</title>
 </head>
 <body>
@@ -38,19 +37,45 @@
                 <input type="text" placeholder="请输入搜索关键字">
             </div>
             <!--登录按钮 begin-->
-            <a href="" class="index-loginbtn">登录</a>
+            <a href="vod_login.html" class="index-loginbtn">登录</a>
             <!--登录按钮 end-->
             <!--登录后 begin-->
             <div class="header-userinfo" style="display: none">
                 <span class="header-userphoto">
                     <img src="../images/temp/img1.png">
-                </span> <span class="header-username">用户名</span>
+                </span>
+                <span class="header-username">用户名</span>
             </div>
             <!--登录后 end-->
         </div>
     </header>
     <!--header begin-->
-    <nav class="nav"></nav>
+    <!--nav being-->
+    <nav class="nav">
+        <ul class="navbox">
+            <li class="nav-item nav-current">
+                <a href="vod_index.html">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="vod_index.html">最近更新</a>
+            </li>
+            <li class="nav-item">
+                <a href="vod_index.html">电影</a>
+            </li>
+            <li class="nav-item">
+                <a href="vod_index.html">综艺</a>
+            </li>
+            <li class="nav-item">
+                <a href="vod_index.html">电视剧</a>
+            </li>
+            <li class="nav-item">
+                <a href="vod_index.html">娱乐</a>
+            </li>
+        </ul>
+        <span class="nav-channel">频道</span>
+    </nav>
+    <section class="navline"></section>
+    <!--nav end-->
     <!--container begin-->
     <section id="container">
         <div class="vod-container">
@@ -99,51 +124,51 @@
             </div>
             <!--banner end-->
             <!--list begin-->
-            <div class="index-list index-recommend">
-                <div class="index-list-title">
+            <div class="vod-list index-recommend">
+                <div class="vod-list-title">
                     <h2><span>推荐视频</span></h2>
-                    <a href="">更多&gt;&gt;</a>
+                    <a href="vod_videolist.html">更多&gt;&gt;</a>
                 </div>
-                <div class="index-listbox">
+                <div class="vod-listbox">
                     <ul>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img3.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img4.png">
                             </a>
-                            <a href="" class="index-list-name">加勒比海盗</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">加勒比海盗</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img5.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img6.png">
                             </a>
-                            <a href="" class="index-list-name">美国队长</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">美国队长</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                     </ul>
-                    <span class="index-list-refresh">换一批</span>
+                    <span class="vod-list-refresh">换一批</span>
                 </div>
             </div>
             <!--list end-->
@@ -151,51 +176,51 @@
                 <img class="lazy" data-original="../images/temp/ad1.png">
             </a>
             <!--list begin-->
-            <div class="index-list index-favorite">
-                <div class="index-list-title">
-                    <h2>最受欢迎</h2>
-                    <a href="">更多&gt;&gt;</a>
+            <div class="vod-list index-favorite">
+                <div class="vod-list-title">
+                    <h2><span>最受欢迎</span></h2>
+                    <a href="vod_videolist.html">更多&gt;&gt;</a>
                 </div>
-                <div class="index-listbox">
+                <div class="vod-listbox">
                     <ul>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img7.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img8.png">
                             </a>
-                            <a href="" class="index-list-name">加勒比海盗</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">加勒比海盗</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img9.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img10.png">
                             </a>
-                            <a href="" class="index-list-name">美国队长</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">美国队长</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                     </ul>
-                    <span class="index-list-refresh">换一批</span>
+                    <span class="vod-list-refresh">换一批</span>
                 </div>
             </div>
             <!--list end-->
@@ -203,51 +228,51 @@
                 <img class="lazy" data-original="../images/temp/ad2.png">
             </a>
             <!--list begin-->
-            <div class="index-list index-mostplay">
-                <div class="index-list-title">
-                    <h2>播放最多</h2>
-                    <a href="">更多&gt;&gt;</a>
+            <div class="vod-list index-mostplay">
+                <div class="vod-list-title">
+                    <h2><span>播放最多</span></h2>
+                    <a href="vod_videolist.html">更多&gt;&gt;</a>
                 </div>
-                <div class="index-listbox">
+                <div class="vod-listbox">
                     <ul>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img11.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img12.png">
                             </a>
-                            <a href="" class="index-list-name">加勒比海盗</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">加勒比海盗</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img13.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="vod_video.html" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img14.png">
                             </a>
-                            <a href="" class="index-list-name">美国队长</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="vod_video.html" class="vod-list-name">美国队长</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                     </ul>
-                    <span class="index-list-refresh">换一批</span>
+                    <span class="vod-list-refresh">换一批</span>
                 </div>
             </div>
             <!--list end-->
@@ -255,51 +280,51 @@
                 <img class="lazy" data-original="../images/temp/ad3.png">
             </a>
             <!--list begin-->
-            <div class="index-list index-renewest">
-                <div class="index-list-title">
-                    <h2>最新更新</h2>
+            <div class="vod-list index-renewest">
+                <div class="vod-list-title">
+                    <h2><span>最新更新</span></h2>
                     <a href="">更多&gt;&gt;</a>
                 </div>
-                <div class="index-listbox">
+                <div class="vod-listbox">
                     <ul>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img3.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img4.png">
                             </a>
-                            <a href="" class="index-list-name">加勒比海盗</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="" class="vod-list-name">加勒比海盗</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img5.png">
                             </a>
-                            <a href="" class="index-list-name">影坛黑王子</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="" class="vod-list-name">影坛黑王子</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
-                        <li class="index-list-item">
-                            <a href="" class="index-list-imgbox">
+                        <li class="vod-list-item">
+                            <a href="" class="vod-list-imgbox">
                                 <img class="lazy" data-original="../images/temp/img6.png">
                             </a>
-                            <a href="" class="index-list-name">美国队长</a>
-                            <div class="index-list-info">
-                                <span class="index-list-playnum">10,900亿</span> <span class="index-list-commentnum">34,955</span>
+                            <a href="" class="vod-list-name">美国队长</a>
+                            <div class="vod-list-info">
+                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                     </ul>
-                    <span class="index-list-refresh">换一批</span>
+                    <span class="vod-list-refresh">换一批</span>
                 </div>
             </div>
             <!--list end-->
@@ -331,7 +356,7 @@
     <!--bottomMenu end-->
     <!--引入JS-->
     <script src="../js/lib/jquery-2.1.4.min.js"></script>
-    <script src="../js/lib/flexible_css.js"></script>
+    <!--<script src="../js/lib/flexible_css.js"></script>-->
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/swiper.jquery.min.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
