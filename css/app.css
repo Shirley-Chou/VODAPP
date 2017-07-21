@@ -1,4 +1,39 @@
 ﻿@charset "UTF-8";
+/*login begin*/
+.login-top {
+    position: relative;
+    width: 100%;
+    height: 6.36rem;
+}
+.login-top .login-top-showdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.24rem;
+    background: url("../images/login_top_showdown.png") repeat-x left top;
+    background-size: auto 100%;
+}
+.login-top .login-top-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/login_top_bg.png") no-repeat center bottom;
+    background-size: 100% auto;
+}
+.login-top-icon{
+    position: absolute;
+    bottom: -0.925rem;
+    left: 50%;
+    width: 1.86rem;
+    height: 1.86rem;
+    margin-left: -0.925rem;
+    background: url("../images/login_top_icon.png") no-repeat;
+    background-size: 100% auto;
+}
+/*login end*/
 /*bottomMenu begin*/
 .bottom-menu {
     display: flex;
@@ -102,7 +137,51 @@
 }
 /*header end*/
 /*nav begin*/
-.nav { }
+.nav {
+    position: relative;
+    width: 100%;
+    height: 0.77rem;
+    background-color: #111119;
+}
+.navbox {
+    display: flex;
+    height: 100%;
+}
+.navbox .nav-item {
+    height: 100%;
+    font-size: 0.4rem;
+    line-height: 0.77rem;
+}
+.nav-item a {
+    display: block;
+    padding: 0 0.2rem;
+}
+.navbox .nav-current {
+    background-color: #f00;
+}
+.nav-current a {
+    color: #fff;
+}
+.nav-channel {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1.03rem;
+    height: 0.77rem;
+    padding-left: 0.61rem;
+    font-size: 0.32rem;
+    line-height: 0.77rem;
+    color: #f00;
+    background: url("../images/icon/nav_channel.png") no-repeat 0.17rem center;
+    background-size: 0.29rem auto;
+}
+.navline {
+    height: 4px;
+    background-image: -moz-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+}
 /*nav end*/
 #container {
     position: relative;
@@ -120,7 +199,7 @@
     display: block;
     position: fixed;
     right: 0.67rem;
-    bottom: 4.8rem;
+    bottom: 2rem;
     width: 0.87rem;
     height: 0.44rem;
     padding-top: 0.43rem;
@@ -232,9 +311,11 @@
     height: 0.75rem;
     line-height: 0.75rem;
     text-indent: 0.4rem;
+    color: #fff;
     background: rgba(0, 0, 0, .8);
 }
 .swiper-pagination {
+    width: 100%;
     text-align: right;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -262,75 +343,78 @@
     background: url("../images/icon/dot_current.png") no-repeat;
     background-size: 100% auto;
 }
-.index-list {
+.vod-list {
     margin-bottom: 0.44rem;
 }
-.index-list .index-list-title {
+.vod-list .vod-list-title {
     display: flex;
     justify-content: space-between;
     height: 0.48rem;
     margin-bottom: 0.21rem;
 }
-.index-list-title h2 {
+.vod-list-title h2 {
     height: 0.48rem;
     padding-left: 0.58rem;
     font-size: 0.4rem;
     font-family: "HYk1gj";
     line-height: 0.48rem;
 }
-.index-list-title h2 span {
+.vod-list-title h2 span {
+    font-family: 'HYk1gj', serif;
     background: -webkit-linear-gradient(left, #e51515, #f56f0f);
+    background: -moz-linear-gradient(left, #e51515, #f56f0f);
+    background: -ms-linear-gradient(left, #e51515, #f56f0f);
     -webkit-background-clip: text; /*只有webkit内核支持text的剪切模式*/
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
-.index-list-title a {
+.vod-list-title a {
     font-size: 0.32rem;
     line-height: 0.48rem;
     color: #4d516f;
 }
-.index-list .index-listbox {
+.vod-list .vod-listbox {
 }
-.index-listbox ul {
+.vod-listbox ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: -0.3rem;
 }
-.index-list-item {
+.vod-list-item {
     margin-bottom: 0.32rem;
     margin-left: 0.3rem;
 }
-.index-list-item a {
+.vod-list-item a {
     display: block;
 }
-.index-list-imgbox {
+.vod-list-imgbox {
     width: 4.6rem;
     height: 2.72rem;
     margin-bottom: 0.16rem;
 }
-.index-list-imgbox img {
+.vod-list-imgbox img {
     width: 4.6rem;
     height: 2.72rem;
 }
-.index-list-name {
+.vod-list-name {
     margin-bottom: 0.13rem;
     font-size: 0.32rem;
     color: #fff;
 }
-.index-list-info span {
+.vod-list-info span {
     padding-left: 0.37rem;
     padding-right: 0.4rem;
     font-size: 0.27rem;
 }
-.index-list-playnum {
+.vod-list-playnum {
     background: url("../images/icon/play.png") no-repeat left center;
     background-size: 0.28rem auto;
 }
-.index-list-commentnum {
+.vod-list-commentnum {
     background: url("../images/icon/comment.png") no-repeat left center;
     background-size: 0.28rem auto;
 }
-.index-listbox .index-list-refresh {
+.vod-listbox .vod-list-refresh {
     display: block;
     width: 1.84rem;
     height: 0.48rem;
@@ -344,19 +428,19 @@
     background-size: 0.28rem auto;
     cursor: pointer;
 }
-.index-recommend .index-list-title h2 {
+.index-recommend .vod-list-title h2 {
     background: url("../images/icon/index_title_recommend.png") no-repeat left center;
     background-size: auto 0.48rem;
 }
-.index-favorite .index-list-title h2 {
+.index-favorite .vod-list-title h2 {
     background: url("../images/icon/index_title_favorite.png") no-repeat left center;
     background-size: auto 0.48rem;
 }
-.index-mostplay .index-list-title h2 {
+.index-mostplay .vod-list-title h2 {
     background: url("../images/icon/index_title_mostplay.png") no-repeat left center;
     background-size: auto 0.48rem;
 }
-.index-renewest .index-list-title h2 {
+.index-renewest .vod-list-title h2 {
     background: url("../images/icon/index_title_newest.png") no-repeat left center;
     background-size: auto 0.48rem;
 }
@@ -400,3 +484,13 @@
     background-color: #f00;
 }
 /*pagination end*/
+/*video begin*/
+.video-list .vod-list-title h2 {
+    height: 0.48rem;
+    padding-left: 0;
+    font-size: 0.35rem;
+    font-family: STHeiti, "STHeiTi";
+    line-height: 0.48rem;
+    color: #ffd800;
+}
+/*video end*/
