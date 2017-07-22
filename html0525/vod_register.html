@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="最好的电影"/>
+    <meta name="keywords" content="电影电影"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--引入CSS-->
+    <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/app.css" rel="stylesheet"/>
+    <title>刀光合影看武侠，大宝剑</title>
+</head>
+<body>
+    <section id="container">
+        <!--registerTop begin-->
+        <section class="register-top">
+            <div class="register-top-showdown"></div>
+            <img class="lazy" data-original="../images/temp/login_img1.png">
+            <div class="register-top-bg"></div>
+            <div class="register-top-icon"></div>
+        </section>
+        <!--registerTop end-->
+        <!--registerContainer begin-->
+        <section class="register-container">
+            <div class="register-title">
+                <h1>立即注册</h1>
+                <p>
+                    <span>已有账号？</span>
+                    <a href="vod_login.html">立即登录</a>
+                </p>
+            </div>
+            <form class="register-form">
+                <ul>
+                    <li class="register-form-item">
+                        <input type="text" placeholder="账号由5-11位数字或字母组成" class="register-input register-username">
+                    </li>
+                    <li class="register-form-item">
+                        <input type="password" placeholder="由6-16位数字和字母组成" class="register-input register-pwd">
+                    </li>
+                    <li class="register-form-item">
+                        <input type="text" placeholder="请输入手机号码" class="register-input register-phone">
+                    </li>
+                    <li class="register-form-item">
+                        <input type="text" placeholder="验证码" class="register-input register-yzm">
+                        <input type="button" value="点击获取验证码" class="register-yzmbtn">
+                    </li>
+                    <li class="register-form-item">
+                        <label>
+                            <div class="register-checkbox register-checked">
+                                <input type="checkbox" name="promise" checked>
+                            </div>
+                            <span>我保证我年满18岁</span>
+                        </label>
+                        <label>
+                            <div class="register-checkbox register-checked">
+                                <input type="checkbox" name="agree" checked>
+                            </div>
+                            <span>我同意<a href="">使用条款</a>和<a href="">隐私政策</a></span>
+                        </label>
+                    </li>
+                    <li class="register-form-item">
+                        <input type="button" value="立即注册" class="register-btn">
+                    </li>
+                </ul>
+            </form>
+        </section>
+        <!--registerContainer end-->
+    </section>
+    <!--引入JS-->
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
+    <!--<script src="../js/lib/flexible_css.js"></script>-->
+    <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/app.js"></script>
+    <script>
+        app.pageHeight($('#container'));
+        app.imglazyload();
+        app.checkStatus($('.register-checkbox'),'register-checked');
+    </script>
+</body>
+</html>
