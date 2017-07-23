@@ -18,7 +18,7 @@
         <!--loginTop begin-->
         <section class="login-top">
             <div class="login-top-showdown"></div>
-            <img src="../images/temp/login_img1.png">
+            <img class="lazy" data-original="../images/temp/login_img1.png">
             <div class="login-top-bg"></div>
             <div class="login-top-icon"></div>
         </section>
@@ -37,22 +37,30 @@
                     <li class="login-form-item">
                         <input type="button" value="登录" class="login-btn">
                     </li>
+                    <li class="login-form-item">
+                        <label class="login-checkmain">
+                            <div class="login-checkbox login-checked"></div>
+                            <input type="checkbox" name="remember" checked>
+                            <span>记住我</span>
+                        </label>
+                        <a href="" class="login-fogetpwd">忘记密码？</a>
+                    </li>
                 </ul>
             </form>
+            <a href="vod_register.html" class="login-registerlink">立即注册</a>
         </section>
         <!--loginContainer end-->
     </section>
     <!--引入JS-->
     <script src="../js/lib/jquery-2.1.4.min.js"></script>
-    <!--<script src="../js/lib/flexible_css.js"></script>-->
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/app.js"></script>
+
     <script>
-        $("img.lazy").lazyload({
-            placeholder : "../images/icon/grey.gif", //用图片提前占位
-            effect : "fadeIn", // 载入使用何种效果
-            threshold : 300, // 提前开始加载
-        });
+        app.pageHeight($('#container'));
+        app.imglazyload();
+        app.checkStatus($('.login-checkbox'),'login-checked');
     </script>
 </body>
 </html>

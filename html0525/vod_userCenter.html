@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="最好的电影"/>
+    <meta name="keywords" content="电影电影"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--引入CSS-->
+    <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/app.css" rel="stylesheet"/>
+    <title>刀光合影看武侠，大宝剑</title>
+</head>
+<body>
+    <section id="container" class="center-container">
+        <!--centerHeader begin-->
+        <header class="center-header">
+            <h1>个人中心</h1>
+            <a onclick="window.history.go(-1)" class="center-header-return"></a>
+        </header>
+        <!--centerHeader begin-->
+        <!--container begin-->
+        <section class="usercenter">
+            <div class="usercenter-userinfobox">
+                <div class="usercenter-userinfo">
+                    <a href="" class="usercenter-userphoto">
+                        <img class="lazy" data-original="../images/temp/usercenter_img1.png">
+                    </a>
+                    <div>
+                        <a href="" class="usercenter-username">用户名卷卷</a>
+                        <span class="usercenter-usertips">您尚未开通任何VIP套餐</span>
+                    </div>
+                </div>
+                <a href="" class="usercenter-vipbtn">立即开通VIP</a>
+            </div>
+            <div class="usercenter-main">
+                <ul>
+                    <li  class="usercenter-item">
+                        <a href="vod_messageList.html" class="usercenter-msg">系统消息</a>
+                    </li>
+                    <li  class="usercenter-item">
+                        <a href="vod_history.html" class="usercenter-history">播放记录</a>
+                    </li>
+                    <li  class="usercenter-item">
+                        <a href="vod_collect.html" class="usercenter-collect">我的收藏</a>
+                    </li>
+                    <li  class="usercenter-item">
+                        <a href="vod_account.html" class="usercenter-account">我的账号</a>
+                    </li>
+                    <li  class="usercenter-item">
+                        <a href="vod_safeCenter.html" class="usercenter-safe">安全中心</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--container end-->
+    </section>
+    <!--bottomMenu begin-->
+    <section class="bottom-menu">
+        <a href="vod_index.html" class="bottom-menu-item bottom-menu-home">首页</a>
+        <a href="vod_ad.html" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
+        <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
+    </section>
+    <!--bottomMenu end-->
+    <!--引入JS-->
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/app.js"></script>
+
+    <script>
+        app.imglazyload();
+        app.pageHeight($('.center-container'));
+    </script>
+</body>
+</html>

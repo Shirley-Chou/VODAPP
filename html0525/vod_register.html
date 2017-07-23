@@ -49,15 +49,13 @@
                     </li>
                     <li class="register-form-item">
                         <label>
-                            <div class="register-checkbox register-checked">
-                                <input type="checkbox" name="promise" checked>
-                            </div>
+                            <div class="register-checkbox register-checked"></div>
+                            <input type="checkbox" name="promise" checked>
                             <span>我保证我年满18岁</span>
                         </label>
                         <label>
-                            <div class="register-checkbox register-checked">
-                                <input type="checkbox" name="agree" checked>
-                            </div>
+                            <div class="register-checkbox register-checked"></div>
+                            <input type="checkbox" name="agree" checked>
                             <span>我同意<a href="">使用条款</a>和<a href="">隐私政策</a></span>
                         </label>
                     </li>
@@ -68,17 +66,25 @@
             </form>
         </section>
         <!--registerContainer end-->
+        <!--弹出层-->
+        <section class="vod-pop">
+            <div class="vod-popbox">
+                <a class="vod-popclose">X</a>
+                <p class="vod-popbox-info">您输入的账号有误，请重新输入</p>
+            </div>
+        </section>
     </section>
     <!--引入JS-->
     <script src="../js/lib/jquery-2.1.4.min.js"></script>
-    <!--<script src="../js/lib/flexible_css.js"></script>-->
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
     <script src="../js/core/app.js"></script>
+
     <script>
         app.pageHeight($('#container'));
         app.imglazyload();
         app.checkStatus($('.register-checkbox'),'register-checked');
+        app.register();
     </script>
 </body>
 </html>

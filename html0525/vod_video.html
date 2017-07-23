@@ -10,12 +10,13 @@
     <link rel="shortcut icon" href="../images/favicon.ico">
     <!--引入CSS-->
     <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/video-js.css" rel="stylesheet">
     <link href="../css/app.css" rel="stylesheet"/>
     <title>刀光合影看武侠，大宝剑</title>
 </head>
 <body>
     <!--header begin-->
-    <header class="header clearfix">
+    <header class="header">
         <div class="header-main">
             <span class="header-logo">
                 <img src="../images/logo.png">
@@ -27,12 +28,12 @@
             <a href="vod_login.html" class="index-loginbtn">登录</a>
             <!--登录按钮 end-->
             <!--登录后 begin-->
-            <div class="header-userinfo" style="display: none">
+            <a href="vod_userCenter.html" class="header-userinfo" style="display: none">
                 <span class="header-userphoto">
                     <img src="../images/temp/img1.png">
                 </span>
                 <span class="header-username">用户名</span>
-            </div>
+            </a>
             <!--登录后 end-->
         </div>
     </header>
@@ -40,13 +41,13 @@
     <!--nav being-->
     <nav class="nav">
         <ul class="navbox">
-            <li class="nav-item nav-current">
+            <li class="nav-item">
                 <a href="vod_index.html">首页</a>
             </li>
             <li class="nav-item">
                 <a href="vod_index.html">最近更新</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-current">
                 <a href="vod_index.html">电影</a>
             </li>
             <li class="nav-item">
@@ -59,13 +60,57 @@
                 <a href="vod_index.html">娱乐</a>
             </li>
         </ul>
-        <span class="nav-channel">频道</span>
+        <!--navChannel begin-->
+        <section class="nav-channel">
+            <span class="nav-channelbtn">频道</span>
+            <span class="nav-channel-icon"></span>
+            <div class="nav-channelbox">
+                <a href="" class="nav-channel-item nav-channel-current">电视剧</a>
+                <a href="" class="nav-channel-item">微电影</a>
+                <a href="" class="nav-channel-item">纪录片</a>
+                <a href="" class="nav-channel-item">美剧</a>
+                <a href="" class="nav-channel-item">音乐</a>
+                <a href="" class="nav-channel-item">少儿</a>
+                <a href="" class="nav-channel-item">原创</a>
+                <a href="" class="nav-channel-item">美剧</a>
+                <a href="" class="nav-channel-item">韩剧</a>
+            </div>
+        </section>
+        <!--navChannel end-->
     </nav>
     <section class="navline"></section>
     <!--nav end-->
     <!--container begin-->
     <section id="container">
-        <div class="vod-container">
+        <div class="vod-container video">
+            <!--videoContainer begin-->
+            <div class="video-container">
+                <video id="my-video" class="video-js" controls preload="auto" poster="../images/temp/video_img1.png" data-setup="{}">
+                    <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+                    <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                    <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+                <div class="video-info">
+                    <div class="video-title">
+                        <h2>影坛黑王子</h2>
+                        <a href="">简介</a>
+                    </div>
+                    <p>电影简介</p>
+                    <div class="video-btn">
+                        <span class="video-comment">20万条好评</span>
+                        <div class="video-btnbox">
+                            <a class="video-collect"></a>
+                            <a class="video-praise"></a>
+                            <a class="video-share"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--videoContainer end-->
             <!--list begin-->
             <div class="vod-list video-list">
                 <div class="vod-list-title">
@@ -79,7 +124,8 @@
                             </a>
                             <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
                             <div class="vod-list-info">
-                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
+                                <span class="vod-list-playnum">10,900亿</span>
+                                <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                         <li class="vod-list-item">
@@ -88,7 +134,8 @@
                             </a>
                             <a href="vod_video.html" class="vod-list-name">加勒比海盗</a>
                             <div class="vod-list-info">
-                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
+                                <span class="vod-list-playnum">10,900亿</span>
+                                <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                         <li class="vod-list-item">
@@ -97,7 +144,8 @@
                             </a>
                             <a href="vod_video.html" class="vod-list-name">影坛黑王子</a>
                             <div class="vod-list-info">
-                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
+                                <span class="vod-list-playnum">10,900亿</span>
+                                <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                         <li class="vod-list-item">
@@ -106,11 +154,11 @@
                             </a>
                             <a href="vod_video.html" class="vod-list-name">美国队长</a>
                             <div class="vod-list-info">
-                                <span class="vod-list-playnum">10,900亿</span> <span class="vod-list-commentnum">34,955</span>
+                                <span class="vod-list-playnum">10,900亿</span>
+                                <span class="vod-list-commentnum">34,955</span>
                             </div>
                         </li>
                     </ul>
-                    <span class="vod-list-refresh">换一批</span>
                 </div>
             </div>
             <!--list end-->
@@ -122,23 +170,27 @@
     <!--container end-->
     <!--bottomMenu begin-->
     <section class="bottom-menu">
-        <a href="vod_index.html" class="bottom-menu-item bottom-menu-home bottom-menu-current">首页</a>
-        <a href="" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
-        <a href="" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
+        <a href="vod_index.html" class="bottom-menu-item bottom-menu-home">首页</a>
+        <a href="vod_ad.html" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
+        <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
     </section>
     <!--bottomMenu end-->
     <!--引入JS-->
     <script src="../js/lib/jquery-2.1.4.min.js"></script>
-    <!--<script src="../js/lib/flexible_css.js"></script>-->
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/lib/video.min.js"></script>
+    <script src="../js/core/app.js"></script>
 
     <script>
-        $("img.lazy").lazyload({
-            placeholder : "../images/icon/grey.gif", //用图片提前占位
-            effect : "fadeIn", // 载入使用何种效果
-            threshold : 300, // 提前开始加载
+        app.imglazyload();
+        var myPlayer = videojs('my-video');
+        videojs("my-video").ready(function(){
+            var myPlayer = this;
+            myPlayer.play();
         });
+        app.toggleCls();
+        app.navChannel();
     </script>
 </body>
 </html>
