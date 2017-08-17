@@ -17,43 +17,35 @@
     <section id="container" class="center-container">
         <!--centerHeader begin-->
         <header class="center-header">
-            <h1>个人中心</h1>
+            <h1>我的账户</h1>
             <a onclick="window.history.go(-1)" class="center-header-return"></a>
         </header>
         <!--centerHeader begin-->
         <!--container begin-->
-        <section class="usercenter">
-            <div class="usercenter-userinfobox">
-                <div class="usercenter-userinfo">
-                    <a href="" class="usercenter-userphoto">
-                        <img class="lazy" data-original="../images/temp/usercenter_img1.png">
-                    </a>
-                    <div>
-                        <a href="" class="usercenter-username">用户名卷卷</a>
-                        <span class="usercenter-usertips">您尚未开通任何VIP套餐</span>
-                    </div>
-                </div>
-                <a href="" class="usercenter-vipbtn">立即开通VIP</a>
-            </div>
-            <div class="usercenter-main">
+        <section class="myaccount">
+            <div class="myaccount-main">
                 <ul>
-                    <li  class="usercenter-item">
-                        <a href="vod_messageList.html" class="usercenter-msg">系统消息</a>
+                    <li class="myaccount-item myaccount-photoitem">
+                        <a href="" class="myaccount-itemcon">
+                            <h3 class="myaccount-title">头像</h3>
+                            <img class="lazy" data-original="../images/temp/myaccount_img1.png">
+                        </a>
                     </li>
-                    <li  class="usercenter-item">
-                        <a href="vod_history.html" class="usercenter-history">播放记录</a>
+                    <li class="myaccount-item">
+                        <a href="" class="myaccount-itemcon">
+                            <h3 class="myaccount-title">昵称</h3>
+                            <span class="myaccount-msg">用户名卷卷</span>
+                        </a>
                     </li>
-                    <li  class="usercenter-item">
-                        <a href="vod_collect.html" class="usercenter-collect">我的收藏</a>
-                    </li>
-                    <li  class="usercenter-item">
-                        <a href="vod_myAccount.html" class="usercenter-account">我的账号</a>
-                    </li>
-                    <li  class="usercenter-item">
-                        <a href="vod_safeCenter.html" class="usercenter-safe">安全中心</a>
+                    <li class="myaccount-item">
+                        <a href="" class="myaccount-itemcon">
+                            <h3 class="myaccount-title">VIP</h3>
+                            <span class="myaccount-msg">为开通VIP</span>
+                        </a>
                     </li>
                 </ul>
             </div>
+            <input type="button" class="myaccount-btn" value="安全退出">
         </section>
         <!--container end-->
     </section>
@@ -69,7 +61,6 @@
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
     <script src="../js/core/app.js"></script>
-
     <script>
         app.imglazyload();
         app.pageHeight($('.center-container'));

@@ -97,7 +97,7 @@ a {
     /*-webkit-transition: all .3s linear;*/
     /*-moz-transition: all .3s linear;*/
 }
-a:focus {
+a:focus,a:active {
     outline: 0;
     -moz-outline-style: none;
     -webkit-tap-highlight-color: transparent;
