@@ -1223,7 +1223,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
 }
 /*collect end*/
 /*account being*/
-.myaccount-main{
+.myaccount-main {
     margin-bottom: 0.6rem;
 }
 .myaccount-main .myaccount-item {
@@ -1242,26 +1242,26 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     width: 100%;
     height: 100%;
 }
-.myaccount-itemcon .myaccount-title{
+.myaccount-itemcon .myaccount-title {
     font-size: 0.4rem;
     color: #fff;
 }
-.myaccount-itemcon .myaccount-msg{
+.myaccount-itemcon .myaccount-msg {
     margin-right: 0.6rem;
     font-size: 0.32rem;
 }
-.myaccount-main .myaccount-photoitem{
+.myaccount-main .myaccount-photoitem {
     height: 1.49rem;
     padding: 0.11rem 2.5%;
     line-height: 1.49rem;
 }
-.myaccount-photoitem .myaccount-itemcon>img{
+.myaccount-photoitem .myaccount-itemcon > img {
     display: block;
     width: 1.49rem;
     height: auto;
     margin-right: 0.92rem;
 }
-.myaccount .myaccount-btn{
+.myaccount .myaccount-btn {
     display: block;
     width: 95%;
     height: 1.12rem;
@@ -1274,11 +1274,96 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     border-radius: 0.24rem;
     cursor: pointer;
 }
-.myaccount .myaccount-btn:active{
+.myaccount .myaccount-btn:active {
     background-image: -moz-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
     background-image: -webkit-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
     background-image: -ms-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
     color: #fff;
-    -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 /*account end*/
+/*opinion begin*/
+.opinion {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.32rem;
+}
+.opinion-problem {
+    margin-bottom: 0.48rem;
+}
+.opinion-problem .opinion-problem-title {
+    display: flex;
+    justify-content: space-between;
+    height: 0.79rem;
+    padding: 0.32rem 0;
+    line-height: 0.79rem;
+}
+.opinion-problem-title h2 {
+    color: #ffd800;
+}
+.opinion-problem-title a {
+    width: 3.96rem;
+    height: 0.79rem;
+    border-radius: 0.15rem;
+    background-image: -moz-linear-gradient(0deg, rgb(20, 76, 249) 0%, rgb(77, 168, 254) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(20, 76, 249) 0%, rgb(77, 168, 254) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(20, 76, 249) 0%, rgb(77, 168, 254) 100%);
+}
+.opinion-problem-title a span {
+    padding-left: 0.88rem;
+    color: #fff;
+    background: url("../images/icon/opinion_qq.png") no-repeat 0.44rem center;
+    background-size: 0.31rem auto;
+}
+.opinion-problem-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: #33364b;
+}
+.opinion-problemmsg {
+    margin-bottom: 0.4rem;
+}
+.opinion-tel {
+    margin-bottom: 0.87rem;
+}
+.opinion-problemmsg h2, .opinion-tel h2 {
+    margin-bottom: 0.25rem;
+    color: #ffd800;
+}
+.opinion-problem-textarea {
+    width: 100%;
+    height: 2.7rem;
+    padding-top: 0.32rem;
+    text-indent: 0.52rem;
+    background-color: #33364b;
+    color: #7e83a6;
+}
+.opinion-tel-input {
+    width: 100%;
+    height: 1.04rem;
+    text-indent: 0.52rem;
+    line-height: 1.04rem;
+    background-color: #33364b;
+    color: #7e83a6;
+}
+.opinion-problem-textarea::-moz-placeholder, .opinion-tel-input::-moz-placeholder {
+    color: #4d516f;
+}
+.opinion-problem-textarea::-webkit-input-placeholder, .opinion-tel-input::-webkit-input-placeholder {
+    color: #4d516f;
+}
+.opinion-problem-textarea:-ms-input-placeholder, .opinion-tel-input:-ms-input-placeholder {
+    color: #4d516f;
+}
+.opinion-btn {
+    width: 100%;
+    height: 1.04rem;
+    text-align: center;
+    line-height: 1.04rem;
+    color: #fff;
+    background-image: -moz-linear-gradient(0deg, rgb(255, 7, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(255, 7, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(255, 7, 0) 0%, rgb(255, 216, 0) 100%);
+}
+/*opinion end*/

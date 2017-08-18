@@ -17,35 +17,31 @@
     <section id="container" class="center-container">
         <!--centerHeader begin-->
         <header class="center-header">
-            <h1>我的账户</h1>
-            <a onclick="window.history.go(-1)" class="center-header-return"></a>
+            <h1>意见反馈</h1>
         </header>
         <!--centerHeader begin-->
         <!--container begin-->
-        <section class="myaccount">
-            <div class="myaccount-main">
-                <ul>
-                    <li class="myaccount-item myaccount-photoitem">
-                        <a href="" class="myaccount-itemcon">
-                            <h3 class="myaccount-title">头像</h3>
-                            <img class="lazy" data-original="../images/temp/myaccount_img1.png">
+        <section class="opinion">
+            <form class="opinion-form">
+                <div class="opinion-problem">
+                    <div class="opinion-problem-title">
+                        <h2>我遇到的问题</h2>
+                        <a href="javascript:">
+                            <span>客服一 13 157 560</span>
                         </a>
-                    </li>
-                    <li class="myaccount-item">
-                        <a href="" class="myaccount-itemcon">
-                            <h3 class="myaccount-title">昵称</h3>
-                            <span class="myaccount-msg">用户名卷卷</span>
-                        </a>
-                    </li>
-                    <li class="myaccount-item">
-                        <a href="" class="myaccount-itemcon">
-                            <h3 class="myaccount-title">VIP</h3>
-                            <span class="myaccount-msg">为开通VIP</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <input type="button" class="myaccount-btn" value="安全退出">
+                    </div>
+                    <div class="opinion-problem-box"></div>
+                </div>
+                <div class="opinion-problemmsg">
+                    <h2>请详细写下您所遇到的问题和建议吧（300字以内）：</h2>
+                    <textarea class="opinion-problem-textarea" placeholder="请输入你的反馈"></textarea>
+                </div>
+                <div class="opinion-tel">
+                    <h2>您的联系方式：</h2>
+                    <input type="text" class="opinion-tel-input" placeholder="请输入你的手机号码"/>
+                </div>
+                <input type="button" class="opinion-btn" value="提交">
+            </form>
         </section>
         <!--container end-->
     </section>
@@ -53,7 +49,7 @@
     <section class="bottom-menu">
         <a href="vod_index.html" class="bottom-menu-item bottom-menu-home">首页</a>
         <a href="vod_ad.html" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
-        <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
+        <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest bottom-menu-current">意见反馈</a>
     </section>
     <!--bottomMenu end-->
     <!--引入JS-->
@@ -64,7 +60,7 @@
     <script>
         app.imglazyload();
         app.pageHeight($('.center-container'));
-        document.body.addEventListener('touchstart', function () { });
+        document.body.addEventListener('touchstart', function(){ });
     </script>
 </body>
 </html>
