@@ -30,7 +30,34 @@
                             <span>客服一 13 157 560</span>
                         </a>
                     </div>
-                    <div class="opinion-problem-box"></div>
+                    <div class="opinion-problem-box">
+                        <ul>
+                            <li class="opinion-problem-item">
+                                <label class="opinion-problem-checked">无法观看</label>
+                                <input type="checkbox" checked="checked">
+                            </li>
+                            <li class="opinion-problem-item">
+                                <label>影音不同步</label>
+                                <input type="checkbox">
+                            </li>
+                            <li class="opinion-problem-item">
+                                <label>播放卡顿</label>
+                                <input type="checkbox">
+                            </li>
+                            <li class="opinion-problem-item">
+                                <label>VIP会员</label>
+                                <input type="checkbox">
+                            </li>
+                            <li class="opinion-problem-item">
+                                <label>画面不清晰</label>
+                                <input type="checkbox">
+                            </li>
+                            <li class="opinion-problem-item">
+                                <label>其他</label>
+                                <input type="checkbox">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="opinion-problemmsg">
                     <h2>请详细写下您所遇到的问题和建议吧（300字以内）：</h2>
@@ -61,6 +88,7 @@
         app.imglazyload();
         app.pageHeight($('.center-container'));
         document.body.addEventListener('touchstart', function(){ });
+        app.checkStatus($('.opinion-problem-item label'), 'opinion-problem-checked');
     </script>
 </body>
 </html>

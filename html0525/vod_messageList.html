@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="最好的电影"/>
+    <meta name="keywords" content="电影电影"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--引入CSS-->
+    <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/app.css" rel="stylesheet"/>
+    <title>刀光合影看武侠，大宝剑</title>
+</head>
+<body>
+    <section id="container" class="center-container">
+        <!--centerHeader begin-->
+        <header class="center-header">
+            <h1>系统消息</h1>
+            <a onclick="window.history.go(-1)" class="center-header-return"></a>
+        </header>
+        <!--centerHeader begin-->
+        <!--container begin-->
+        <section class="vod-container messagelist">
+            <ul>
+                <li class="messagelist-item">
+                    <a href="vod_message.html">
+                        <time class="messagelist-time">
+                            <span>2017-06-19</span>
+                        </time>
+                        <h2>最新电影等你来看</h2>
+                        <p>传说中的神话奥汀大陆分为水、风、火、地四个国家，每个国家都有精通魂术的人，其中最厉害的七个被称为王爵。水国普通男孩麒零（陈学冬</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--container end-->
+        <!--bottomMenu begin-->
+        <section class="bottom-menu">
+            <a href="vod_index.html" class="bottom-menu-item bottom-menu-home">首页</a>
+            <a href="vod_ad.html" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
+            <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
+        </section>
+        <!--bottomMenu end-->
+    </section>
+    <!--引入JS-->
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/app.js"></script>
+    <script>
+        app.imglazyload();
+        app.pageHeight($('.center-container'));
+    </script>
+</body>
+</html>

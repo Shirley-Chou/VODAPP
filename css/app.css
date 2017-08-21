@@ -906,6 +906,38 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     background-size: auto 100%;
 }
 /*video end*/
+/*messageList begin*/
+.messagelist-item{
+    position: relative;
+    padding: 0.59rem 0.28rem 0.35rem 0.28rem;
+    background-color: #33364b;
+}
+.messagelist-item a{
+    display: block;
+    width: 100%;
+}
+.messagelist-item .messagelist-time{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.92rem;
+    height: 0.35rem;
+    padding-left: 0.29rem;
+    background-image: -moz-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(26, 86, 250) 0%, rgb(80, 175, 255) 100%);
+}
+.messagelist-time span{
+    display: block;
+    padding-left: 0.35rem;
+    font-size: 0.26rem;
+    line-height: 0.36rem;
+    color: #fff;
+    background: url("../images/icon/messagelist_clock.png") no-repeat left center;
+    background-size: 0.24rem auto;
+}
+/*messageList end*/
 /*message begin*/
 .message {
     padding-top: 0.57rem;
@@ -1316,10 +1348,39 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     background-size: 0.31rem auto;
 }
 .opinion-problem-box {
+
+}
+.opinion-problem-box ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 0.6rem 0 0.07rem 0;
     background-color: #33364b;
+}
+.opinion-problem-box .opinion-problem-item{
+    position: relative;
+    width: 50%;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    margin-bottom: 0.53rem;
+}
+.opinion-problem-item label{
+    display: block;
+    width: 100%;
+    text-indent: 0.6rem;
+    background: url("../images/icon/option_check.png") no-repeat 3.67rem center;
+    background-size: 0.33rem 0.33rem;
+}
+.opinion-problem-box  .opinion-problem-checked{
+    background: url("../images/icon/option_checked.png") no-repeat 3.67rem center;
+    background-size: 0.33rem 0.33rem;
+}
+.opinion-problem-item input[type=checkbox]{
+    position: absolute;
+    top: 0;
+    right: 0.6rem;
+    width: 0.33rem;
+    visibility: hidden;
 }
 .opinion-problemmsg {
     margin-bottom: 0.4rem;

@@ -187,7 +187,5 @@
                 $(this).siblings('input[type="checkbox"]').removeAttr("checked");
             }
         });
-
-
     };
 }(jQuery, window.app = {}));
