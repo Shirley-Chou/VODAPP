@@ -166,14 +166,14 @@
     };
     //播放记录
     vod.collect = function(){
-        $('.collect-choosebtn').bind('click',function(){
+        $('.collect-choosebtn').bind('click', function(){
             $(this).fadeOut();
             $('.collect-chooseall,.collect-deletebtn,.collect-checkmain').fadeIn();
-            $('.collect-list-imgbox').css('margin-left','0');
+            $('.collect-list-imgbox').css('margin-left', '0');
         });
 
-        $('.collect-chooseall').bind('click',function(){
-            $('.collect-check').each(function(i,e){
+        $('.collect-chooseall').bind('click', function(){
+            $('.collect-check').each(function(i, e){
                 $(e).addClass('collect-checked');
                 $(e).siblings('input[type="checkbox"]').attr("checked", 'true');
             });
@@ -187,5 +187,14 @@
                 $(this).siblings('input[type="checkbox"]').removeAttr("checked");
             }
         });
+    };
+    //消息列表
+    vod.messageList = function(){
+        $('.messagelist-item').each(function(i, e){
+            var dateRead = $(e).data('read');
+            if(dateRead){
+                $(e).addClass('messagelist-read')
+            }
+        })
     };
 }(jQuery, window.app = {}));
