@@ -6,6 +6,9 @@
         if(viewH > pageH){
             obj.css('padding-bottom', '0');
             obj.outerHeight(viewH);
+        } else {
+            obj.css('padding-bottom', '1.38rem');
+            obj.outerHeight(pageH);
         }
         console.log(viewH, pageH)
     };
