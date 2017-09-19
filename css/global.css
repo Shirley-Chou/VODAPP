@@ -20,6 +20,7 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     outline: 0;
+    background-color: #727797;
 }
 @font-face {
     font-family: 'STHeiTi';

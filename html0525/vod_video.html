@@ -31,8 +31,7 @@
             <a href="vod_userCenter.html" class="header-userinfo" style="display: none">
                 <span class="header-userphoto">
                     <img src="../images/temp/img1.png">
-                </span>
-                <span class="header-username">用户名</span>
+                </span> <span class="header-username">用户名</span>
             </a>
             <!--登录后 end-->
         </div>
@@ -62,8 +61,7 @@
         </ul>
         <!--navChannel begin-->
         <section class="nav-channel">
-            <span class="nav-channelbtn">频道</span>
-            <span class="nav-channel-icon"></span>
+            <span class="nav-channelbtn">频道</span> <span class="nav-channel-icon"></span>
             <div class="nav-channelbox">
                 <a href="" class="nav-channel-item nav-channel-current">电视剧</a>
                 <a href="" class="nav-channel-item">微电影</a>
@@ -189,7 +187,8 @@
             var myPlayer = this;
             myPlayer.play();
         });
-        app.toggleCls();
+        app.toggleCls($('.video-collect'), 'video-collect-active');
+        app.toggleCls($('.video-praise'), 'video-praise-active');
         app.navChannel();
     </script>
 </body>

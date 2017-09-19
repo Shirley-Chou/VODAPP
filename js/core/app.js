@@ -12,6 +12,20 @@
         }
         console.log(viewH, pageH)
     };
+    vod.pageHeightT = function(obj){
+        var viewH = $(window).height(),
+            pageH = $(document.body).outerHeight(true),
+            headerH = $('.header').outerHeight(true),
+            navH = $('.nav').outerHeight(true);
+        if(viewH > pageH){
+            obj.css('padding-bottom', '0');
+            obj.outerHeight(viewH - headerH - navH - 4);
+        } else {
+            obj.css('padding-bottom', '1.38rem');
+            obj.outerHeight(pageH);
+        }
+        console.log(viewH, pageH)
+    };
     //图片懒加载
     vod.imglazyload = function(){
         $("img.lazy").lazyload({
@@ -83,12 +97,15 @@
             $(this).addClass('vod-list-around');
         });
     };
-    vod.toggleCls = function(){
-        $('.video-collect').bind('click', function(){
-            $(this).toggleClass('video-collect-active');
-        });
-        $('.video-praise').bind('click', function(){
-            $(this).toggleClass('video-praise-active');
+    vod.toggleCls = function(obj, cls){
+        //$('.video-collect').bind('click', function(){
+        //    $(this).toggleClass('video-collect-active');
+        //});
+        //$('.video-praise').bind('click', function(){
+        //    $(this).toggleClass('video-praise-active');
+        //});
+        obj.bind('click', function(){
+            $(this).toggleClass(cls);
         });
     };
     vod.register = function(){
@@ -200,4 +217,10 @@
             }
         })
     };
+    //图片
+    vod.picture=function(){
+        $('.picture-pop').bind('click',function(){
+            $(this).fadeOut();
+        })
+    }
 }(jQuery, window.app = {}));
