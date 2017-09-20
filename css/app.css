@@ -283,7 +283,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     width: 1.85rem;
 }
 .header-main .header-search {
-    width: 57%;
+    width: 50%;
     height: 0.64rem;
     border-radius: 0.64rem;
     background: #414141 url("../images/icon/index_header_search.png") no-repeat 0.32rem center;
@@ -775,7 +775,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     line-height: 0.48rem;
     color: #ffd800;
 }
-.vod-listbox .vod-list-loadmore {
+.vod-listbox .vod-list-loadmore,.activity-list .vod-list-loadmore {
     position: relative;
     width: 2.87rem;
     height: 0.69rem;
@@ -1009,7 +1009,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
 }
 /*message end*/
 /*usercenter begin*/
-.usercenter {
+.usercenter, .safecenter {
     padding-top: 1.69rem;
 }
 .usercenter-userinfobox {
@@ -1021,7 +1021,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     background: #33364b url("../images/icon/usercenter_arrow.png") no-repeat 97.5% center;
     background-size: 0.23rem auto;
 }
-.usercenter-userinfo {
+.usercenter-userinfo, .safecenter-safeinfo {
     display: flex;
     justify-content: space-between;
 }
@@ -1031,7 +1031,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     margin-right: 0.22rem;
     border-radius: 100%;
 }
-.usercenter-userinfo > div {
+.usercenter-userinfo > div, .safecenter-safeinfo > div {
     padding-top: 0.44rem;
 }
 .usercenter-username {
@@ -1100,6 +1100,74 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     background-size: 0.55rem auto;
 }
 /*usercenter end*/
+/*safeCenter begin*/
+.safecenter-safeinfobox {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 0.36rem;
+    padding: 0.35rem 2.5%;
+    background: #33364b;
+    background-size: 0.23rem auto;
+}
+.safecenter-safeinfobox .safecenter-exitbtn {
+    width: 1.4rem;
+    height: 0.71rem;
+    margin-top: 0.52rem;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 0.71rem;
+    color: #fff;
+    border-radius: 0.71rem;
+    background-image: -moz-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+}
+.safecenter-main .safecenter-item {
+    width: 95%;
+    height: 1.23rem;
+    padding: 0 2.5%;
+    font-size: 0.32rem;
+    line-height: 1.23rem;
+    border-bottom: 1px solid #232333;
+    background: #33364b url("../images/icon/usercenter_arrow.png") no-repeat 97.5% center;
+    background-size: 0.23rem auto;
+}
+.safecenter-main .safecenter-item:first-child {
+    margin-bottom: 0.36rem;
+}
+.safecenter-item:active {
+    background: #4d516f url("../images/icon/usercenter_arrow_active.png") no-repeat 97.5% center;
+    background-size: 0.23rem auto;
+}
+.safecenter-item a {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.72rem;
+}
+.safecenter-item a span {
+    padding-right: 0.4rem;
+}
+.safecenter-item .safecenter-item-title {
+    color: #fff;
+}
+.safecenter-loginrecord {
+    background: url("../images/icon/safecenter_time.png") no-repeat left center;
+    background-size: 0.45rem auto;
+}
+.safecenter-phonenum {
+    background: url("../images/icon/safecenter_phone.png") no-repeat left center;
+    background-size: 0.53rem auto;
+}
+.safecenter-bindemail {
+    background: url("../images/icon/safecenter_email.png") no-repeat left center;
+    background-size: 0.57rem auto;
+}
+.safecenter-modifypwd {
+    background: url("../images/icon/safecenter_pwd.png") no-repeat left center;
+    background-size: 0.4rem auto;
+}
+/*safeCenter end*/
 /*history begin*/
 .history {
     padding-top: 0.51rem;
@@ -1608,7 +1676,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     color: #7e83a6;
     border-bottom: 1px solid #4d516f;
 }
-.picture-sharebox{
+.picture-sharebox {
     display: flex;
     justify-content: flex-start;
     padding-top: 0.4rem;
@@ -1641,7 +1709,7 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     background: url("../images/icon/video_praise_active.png") no-repeat;
     background-size: auto 100%;
 }
-.picture-pop{
+.picture-pop {
     position: fixed;
     top: 0;
     width: 100%;
@@ -1651,3 +1719,98 @@ input.login-input:-ms-input-placeholder, input.register-input::-ms-input-placeho
     z-index: 99;
 }
 /*picture end*/
+/*activity begin*/
+.activity {
+    padding-top: 0.53rem;
+}
+.activity-menu {
+    width: 100%;
+    height: 0.88rem;
+    font-size: 0.32rem;
+    line-height: 0.88rem;
+    color: #7e83a6;
+    overflow-x: scroll;
+}
+.activity-menu .activity-menubox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 200%;
+}
+.activity-menu .activity-menu-current {
+    color: #ffd800;
+}
+.activity-menu a {
+    display: block;
+    margin-right: 0.48rem;
+}
+.activity-list{
+    margin-bottom: 0.67rem;
+}
+.activity-item {
+    display: flex;
+    min-height: 2.7rem;
+    padding: 0.4rem;
+    margin-bottom: 0.17rem;
+    background-color: #33364b;
+}
+.activity-imgbox {
+    display: block;
+    position: relative;
+    min-width: 4.62rem;
+    min-height: 2.7rem;
+    margin-right: 0.2rem;
+}
+.activity-imgbox img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.activity-imgbox .activity-tips {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.43rem;
+    padding: 0 0.13rem;
+    font-size: 0.27rem;
+    line-height: 0.43rem;
+    color: #fff;
+    background-color: #f00;
+}
+.activity-txtbox {
+    position: relative;
+    min-height: 2.7rem;
+}
+.activity-txtbox i {
+    font-size: 0.4rem;
+    line-height: 0.48rem;
+    color: #ffd800;
+}
+.activity-txtbox p {
+    font-size: 0.27rem;
+    line-height: 0.4rem;
+    color: #7e83a6;
+}
+.activity-txtbox a {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.05rem;
+    height: 0.53rem;
+    font-size: 0.20rem;
+    line-height: 0.53rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.53rem;
+    background-image: -moz-linear-gradient(0deg, rgb(17, 72, 249) 0%, rgb(81, 176, 255) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(17, 72, 249) 0%, rgb(81, 176, 255) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(17, 72, 249) 0%, rgb(81, 176, 255) 100%);
+}
+.activity-txtbox a:active {
+    background-image: -moz-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -webkit-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+    background-image: -ms-linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 216, 0) 100%);
+}
+/*activity end*/
