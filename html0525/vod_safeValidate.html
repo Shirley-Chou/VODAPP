@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="最好的电影"/>
+    <meta name="keywords" content="电影电影"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <!--引入CSS-->
+    <link href="../css/global.css" rel="stylesheet"/>
+    <link href="../css/app.css" rel="stylesheet"/>
+    <title>刀光合影看武侠，大宝剑</title>
+</head>
+<body>
+    <section id="container" class="center-container">
+        <!--centerHeader begin-->
+        <header class="center-header">
+            <h1>安全中心</h1>
+            <a onclick="window.history.go(-1)" class="center-header-return"></a>
+        </header>
+        <!--centerHeader begin-->
+        <!--container begin-->
+        <section class="safecenter-step">
+            <div class="safecenter-steptop safecenter-stepone">
+                <span class="safecenter-steponetitle">安全验证</span> <span class="safecenter-steptwotitle">绑定邮箱</span>
+                <span class="safecenter-stepthreetitle">绑定成功</span>
+            </div>
+            <div class="safecenter-steptips">
+                您绑定的手机号码<span>180 3452 9809</span>,
+                <i>点击</i>
+                获取验证码
+            </div>
+            <ul>
+                <li class="safecenter-step-item">
+                    <input type="text" class="safecenter-input" placeholder="请输入验证码">
+                    <input type="button" class="safecenter-stepone-btn" value="点击获取验证码">
+                </li>
+            </ul>
+            <input type="button" class="safecenter-stepbtn" value="下一步">
+        </section>
+        <!--container end-->
+    </section>
+    <!--bottomMenu begin-->
+    <section class="bottom-menu">
+        <a href="vod_index.html" class="bottom-menu-item bottom-menu-home">首页</a>
+        <a href="vod_ad.html" class="bottom-menu-item bottom-menu-addbusiness">广告招商</a>
+        <a href="vod_opinion.html" class="bottom-menu-item bottom-menu-suggest">意见反馈</a>
+    </section>
+    <!--bottomMenu end-->
+    <!--引入JS-->
+    <script src="../js/lib/jquery-2.1.4.min.js"></script>
+    <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/app.js"></script>
+
+    <script>
+        app.imglazyload();
+        app.pageHeight($('.center-container'));
+    </script>
+</body>
+</html>
