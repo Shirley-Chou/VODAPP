@@ -39,26 +39,34 @@
     <!--header begin-->
     <!--nav being-->
     <nav class="nav">
-        <ul class="navbox">
-            <li class="nav-item">
-                <a href="vod_index.html">首页</a>
-            </li>
-            <li class="nav-item nav-current">
-                <a href="vod_index.html">最近更新</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">电影</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">综艺</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">电视剧</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">娱乐</a>
-            </li>
-        </ul>
+        <div id="nav" class="swiper-container-horizontal swiper-container-free-mode">
+            <div class="navbox swiper-wrapper">
+                <div class="nav-item swiper-slide nav-current">
+                    <a href="vod_index.html">首页</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">最近更新</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电影</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">综艺</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">娱乐</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+            </div>
+        </div>
         <!--navChannel begin-->
         <section class="nav-channel">
             <span class="nav-channelbtn">频道</span> <span class="nav-channel-icon"></span>
@@ -151,6 +159,10 @@
             preloadImages : false,// Disable preloading of all images
             lazyLoading : true,// Enable lazy loading
             loop : true
+        });
+        var mySwiperNav = new Swiper('#nav', {
+            freeMode : true,
+            slidesPerView : 'auto',
         });
 
         app.imglazyload();
