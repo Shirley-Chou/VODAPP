@@ -11,6 +11,7 @@
     <!--引入CSS-->
     <link href="../css/global.css" rel="stylesheet"/>
     <link href="../css/video-js.css" rel="stylesheet">
+    <link href="../css/swiper.min.css" rel="stylesheet">
     <link href="../css/app.css" rel="stylesheet"/>
     <title>刀光合影看武侠，大宝剑</title>
 </head>
@@ -39,26 +40,34 @@
     <!--header begin-->
     <!--nav being-->
     <nav class="nav">
-        <ul class="navbox">
-            <li class="nav-item">
-                <a href="vod_index.html">首页</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">最近更新</a>
-            </li>
-            <li class="nav-item nav-current">
-                <a href="vod_index.html">电影</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">综艺</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">电视剧</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">娱乐</a>
-            </li>
-        </ul>
+        <div id="nav" class="swiper-container-horizontal swiper-container-free-mode">
+            <div class="navbox swiper-wrapper">
+                <div class="nav-item swiper-slide nav-current">
+                    <a href="vod_index.html">首页</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">最近更新</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电影</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">综艺</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">娱乐</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+            </div>
+        </div>
         <!--navChannel begin-->
         <section class="nav-channel">
             <span class="nav-channelbtn">频道</span> <span class="nav-channel-icon"></span>
@@ -176,11 +185,16 @@
     <!--引入JS-->
     <script src="../js/lib/jquery-2.1.4.min.js"></script>
     <script src="../js/lib/flexible.js"></script>
+    <script src="../js/lib/swiper.min.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
     <script src="../js/lib/video.min.js"></script>
     <script src="../js/core/app.js"></script>
 
     <script>
+        var mySwiperNav = new Swiper('#nav', {
+            freeMode : true,
+            slidesPerView : 'auto',
+        });
         app.imglazyload();
         var myPlayer = videojs('my-video');
         videojs("my-video").ready(function(){

@@ -31,8 +31,7 @@
             <a href="vod_userCenter.html" class="header-userinfo">
                 <span class="header-userphoto">
                     <img src="../images/temp/img1.png">
-                </span>
-                <span class="header-username">用户名用户名</span>
+                </span> <span class="header-username">用户名用户名</span>
             </a>
             <!--登录后 end-->
         </div>
@@ -40,26 +39,34 @@
     <!--header begin-->
     <!--nav being-->
     <nav class="nav">
-        <ul class="navbox">
-            <li class="nav-item">
-                <a href="vod_index.html">首页</a>
-            </li>
-            <li class="nav-item nav-current">
-                <a href="vod_index.html">最近更新</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">电影</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">综艺</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">电视剧</a>
-            </li>
-            <li class="nav-item">
-                <a href="vod_index.html">娱乐</a>
-            </li>
-        </ul>
+        <div id="nav" class="swiper-container-horizontal swiper-container-free-mode">
+            <div class="navbox swiper-wrapper">
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">首页</a>
+                </div>
+                <div class="nav-item swiper-slide nav-current">
+                    <a href="vod_index.html">最近更新</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电影</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">综艺</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">娱乐</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+                <div class="nav-item swiper-slide">
+                    <a href="vod_index.html">电视剧</a>
+                </div>
+            </div>
+        </div>
         <!--navChannel begin-->
         <section class="nav-channel">
             <span class="nav-channelbtn">频道</span> <span class="nav-channel-icon"></span>
@@ -81,16 +88,51 @@
     <!--nav end-->
     <!--container begin-->
     <section id="container">
+        <div id="slide" class="slide" alt="star">
+            <!-- 轮播图片数量可自行增减 -->
+            <div class="img">
+                <img class="lazy" data-original="../images/temp/img2.png"/>
+            </div>
+            <div class="img">
+                <img class="lazy" data-original="../images/temp/img2.png"/>
+            </div>
+            <div class="img">
+                <img class="lazy" data-original="../images/temp/img2.png"/>
+            </div>
+            <div class="img">
+                <img class="lazy" data-original="../images/temp/img2.png"/>
+            </div>
+        </div>
         <div class="vod-container activity">
-            <div class="activity-menu">
-                <div class="activity-menubox">
-                    <a href="" class="activity-menu-current">热门活动</a>
-                    <a href="">最新活动</a>
-                    <a href="">电影</a>
-                    <a href="">电视剧</a>
-                    <a href="">综艺</a>
-                    <a href="">少儿</a>
-                    <a href="">记录片</a>
+            <div class="activity-menu swiper-container-horizontal swiper-container-free-mode">
+                <div class="activity-menubox swiper-wrapper">
+                    <div class="activity-menu-item swiper-slide activity-menu-current">
+                        <a href="">热门活动</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">最新活动</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">电影</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">电视剧</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">综艺</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">少儿</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">记录片</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">电视剧</a>
+                    </div>
+                    <div class="activity-menu-item swiper-slide">
+                        <a href="">综艺</a>
+                    </div>
                 </div>
             </div>
             <div class="activity-list">
@@ -178,7 +220,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!--container end-->
     <!--bottomMenu begin-->
@@ -193,6 +234,7 @@
     <script src="../js/lib/flexible.js"></script>
     <script src="../js/lib/swiper.min.js"></script>
     <script src="../js/lib/jquery.lazyload.min.js?v=1.9.3"></script>
+    <script src="../js/core/vod.slide.js"></script>
     <script src="../js/core/app.js"></script>
 
     <script>
@@ -206,10 +248,19 @@
             loop : true
         });
 
+        var mySwiperNav = new Swiper('#nav', {
+            freeMode : true,
+            slidesPerView : 'auto',
+        });
+        var mySwiperMenu = new Swiper('.activity-menu', {
+            freeMode : true,
+            slidesPerView : 'auto',
+        });
+
         app.imglazyload();
         app.loadmoreAnimate($('.vod-list-loadmore'));
         app.navChannel();
-//        app.pageHeightT($('#container'));
+        //        app.pageHeightT($('#container'));
     </script>
 </body>
 </html>
